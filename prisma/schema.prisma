@@ -1,0 +1,72 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Place {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  description String
+  address     String
+  city        String
+  district    String
+  lat         Float
+  lng         Float
+  phone       String?
+  website     String?
+  instagram   String?
+  openHours   String?
+  priceRange  String?
+  images      String[]
+  rating      Float    @default(0)
+  totalReviews Int     @default(0)
+  isVerified  Boolean  @default(false)
+  isFeatured  Boolean  @default(false)
+
+  categoryId  String
+  category    Category  @relation(fields: [categoryId], references: [id])
+
+  reviews     Review[]
+  tags        Tag[]
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([categoryId])
+  @@index([city])
+  @@index([lat, lng])
+}
+
+model Category {
+  id     String  @id @default(cuid())
+  name   String  @unique
+  slug   String  @unique
+  icon   String
+  color  String
+  places Place[]
+}
+
+model Review {
+  id        String   @id @default(cuid())
+  rating    Int
+  comment   String
+  author    String
+  placeId   String
+  place     Place    @relation(fields: [placeId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@index([placeId])
+}
+
+model Tag {
+  id     String  @id @default(cuid())
+  name   String  @unique
+  places Place[]
+}
