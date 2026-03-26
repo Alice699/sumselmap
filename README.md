@@ -16,7 +16,7 @@
 
 ---
 
-## 📖 Tentang Proyek
+## Tentang Proyek
 
 **SumselMap** adalah platform direktori berbasis peta interaktif yang memudahkan masyarakat menemukan tempat wisata, kuliner, penginapan, dan berbagai bisnis di seluruh wilayah Sumatera Selatan.
 
@@ -24,13 +24,13 @@ Proyek ini dibangun untuk mendukung pertumbuhan UMKM lokal dan promosi pariwisat
 
 ### ✨ Fitur Utama
 
-- 🗺️ **Peta Interaktif** — Visualisasi semua tempat di atas peta menggunakan Leaflet.js
-- 🔍 **Pencarian & Filter** — Cari berdasarkan nama, kategori, kota, dan harga
-- 📍 **Kategori Lengkap** — Wisata, Kuliner, Penginapan, Belanja, Budaya
-- ⭐ **Ulasan & Rating** — Komunitas bisa memberikan ulasan dan rating
-- ✅ **Verifikasi Bisnis** — Sistem verifikasi untuk memastikan data akurat
-- 📱 **Responsive** — Optimal di semua perangkat (mobile, tablet, desktop)
-- 🚀 **Performa Tinggi** — Dibangun di atas Next.js 14 App Router
+- **Peta Interaktif** - Visualisasi semua tempat di atas peta menggunakan Leaflet.js
+- **Pencarian & Filter** - Cari berdasarkan nama, kategori, kota, dan harga
+- **Kategori Lengkap** - Wisata, Kuliner, Penginapan, Belanja, Budaya
+- **Ulasan & Rating** - Komunitas bisa memberikan ulasan dan rating
+- **Verifikasi Bisnis** - Sistem verifikasi untuk memastikan data akurat
+- **Responsive** - Optimal di semua perangkat (mobile, tablet, desktop)
+- **Performa Tinggi** - Dibangun di atas Next.js 14 App Router
 
 ---
 
@@ -48,7 +48,7 @@ Proyek ini dibangun untuk mendukung pertumbuhan UMKM lokal dan promosi pariwisat
 
 ---
 
-## 🚀 Cara Menjalankan Lokal
+## Cara Menjalankan Lokal
 
 ### Prasyarat
 
@@ -112,7 +112,7 @@ sumselmap/
 
 ---
 
-## 🤝 Kontribusi
+## Kontribusi
 
 Kontribusi sangat terbuka! Ini cara untuk berkontribusi:
 
